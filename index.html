@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="kmks 的个人主页。上海师范大学，计算机科学与技术。公开项目与数字分身。">
-  <title>kmks · 个人主页</title>
+  <meta name="description" content="Yuxuan Lu 的个人主页。上海师范大学，计算机科学与技术。公开项目与数字分身。">
+  <title>Yuxuan Lu · 个人主页</title>
   <link rel="icon" href="data:,">
   <style>
     :root{color-scheme:light;--ink:#242426;--muted:#60636c;--line:#dedfe4;--paper:#f5f6f8;--accent:#3459cf}
@@ -15,14 +15,14 @@
 <body>
   <div class="page">
     <header class="nav">
-      <a class="brand" href="#about" aria-label="kmks 个人主页">kmks</a>
+      <a class="brand" href="#about" aria-label="Yuxuan Lu 个人主页">Yuxuan Lu</a>
       <nav class="nav-links" aria-label="主导航"><a href="#projects">公开项目</a><a href="#twin">聊聊</a><a href="https://github.com/KINMOKUSE1" target="_blank" rel="noopener noreferrer">GitHub</a></nav>
     </header>
     <main class="main">
       <div>
         <section id="about" aria-labelledby="intro-title">
           <div class="eyebrow">COMPUTER SCIENCE · SHANGHAI</div>
-          <div class="intro"><h1 id="intro-title">你好，我是<br><span class="name">kmks.</span></h1><img class="avatar" src="avatar.jpg" alt="kmks 的 GitHub 头像" width="164" height="164"></div>
+          <div class="intro"><h1 id="intro-title">你好，我是<br><span class="name">Yuxuan Lu.</span></h1><img class="avatar" src="avatar.jpg" alt="Yuxuan Lu 的 GitHub 头像" width="164" height="164"></div>
           <p class="bio">上海师范大学 · 计算机科学与技术</p>
           <p class="note">欢迎来到我的个人主页。这里收录我的公开项目，也可以通过数字分身了解我的背景。</p>
           <div class="tags"><span class="tag">计算机科学</span><span class="tag">上海</span><span class="tag">@KINMOKUSE1</span></div>
@@ -38,7 +38,7 @@
       </div>
       <section class="chat-wrap" id="twin" aria-labelledby="twin-title">
         <div class="chat">
-          <header class="chat-head"><div class="chat-title"><h2 id="twin-title">kmks 的数字分身</h2><button class="reset" id="reset" type="button">重新开始</button></div><div class="chat-status" id="status" role="status">资料问答 · 尚未连接 AI</div></header>
+          <header class="chat-head"><div class="chat-title"><h2 id="twin-title">Yuxuan Lu 的数字分身</h2><button class="reset" id="reset" type="button">重新开始</button></div><div class="chat-status" id="status" role="status">资料问答 · 尚未连接 AI</div></header>
           <div class="chat-body" id="messages" role="log" aria-live="polite" aria-label="聊天记录"></div>
           <div class="chat-foot">
             <div class="suggestions" aria-label="推荐问题"><button type="button" class="suggestion" data-question="介绍一下你自己">介绍一下你</button><button type="button" class="suggestion" data-question="你有哪些公开项目？">你的公开项目</button><button type="button" class="suggestion" data-question="怎么找到你？">怎么找到你</button></div>
@@ -48,7 +48,7 @@
         <p class="chat-caption">分身依据已确认的个人资料回答。未提供的信息，会如实说明。</p>
       </section>
     </main>
-    <footer class="footer"><span>kmks · KINMOKUSE1</span><span><a href="https://www.shnu.edu.cn/" target="_blank" rel="noopener noreferrer">上海师范大学</a> / <a href="https://github.com/KINMOKUSE1" target="_blank" rel="noopener noreferrer">GitHub</a></span></footer>
+    <footer class="footer"><span>Yuxuan Lu · KINMOKUSE1</span><span><a href="https://www.shnu.edu.cn/" target="_blank" rel="noopener noreferrer">上海师范大学</a> / <a href="https://github.com/KINMOKUSE1" target="_blank" rel="noopener noreferrer">GitHub</a></span></footer>
   </div>
   <script>
     const history = [];
@@ -61,19 +61,19 @@
       const message = document.createElement('div');
       message.className = 'message ' + role;
       if (role === 'assistant') {
-        const speaker = document.createElement('div'); speaker.className = 'speaker'; speaker.textContent = 'kmks 的分身'; message.append(speaker);
+        const speaker = document.createElement('div'); speaker.className = 'speaker'; speaker.textContent = 'Yuxuan Lu 的分身'; message.append(speaker);
       }
       const content = document.createElement('div'); content.textContent = text; message.append(content);
       messages.append(message); messages.scrollTop = messages.scrollHeight;
     }
     function reset() {
       history.length = 0; messages.replaceChildren();
-      append('assistant', '你好，我是 kmks 的数字分身。\n可以问我在哪里读书、有哪些公开项目，或者怎样找到我。');
+      append('assistant', '你好，我是 Yuxuan Lu 的数字分身。\n可以问我在哪里读书、有哪些公开项目，或者怎样找到我。');
     }
     function localAnswer(question) {
       if (/项目|作品|仓库|Mokio|learngit|agent/i.test(question)) return '我的 GitHub 目前有两个公开仓库：\n\n• MokioAgent：从 ToolCall 到 Claw 全 Agent 指南，是从 Wood-Q/MokioAgent Fork 的仓库。\n• learngit：仓库没有填写公开简介，可以到 GitHub 查看具体内容。\n\n我还没有提供更多项目细节，因此不补充未经确认的经历或成果。';
       if (/联系|找到|github|账号|主页/i.test(question)) return '你可以在 GitHub 找到我：\nhttps://github.com/KINMOKUSE1\n\n主页上的 GitHub 按钮可以直接打开我的账号。';
-      if (/学校|大学|专业|介绍|自己|谁|名字|上海|背景/i.test(question)) return '我是 kmks，GitHub 用户名是 KINMOKUSE1，就读于上海师范大学，专业方向是计算机科学与技术，所在地是上海。';
+      if (/学校|大学|专业|介绍|自己|谁|名字|上海|背景/i.test(question)) return '我是 Yuxuan Lu，GitHub 用户名是 KINMOKUSE1，就读于上海师范大学，专业方向是计算机科学与技术，所在地是上海。';
       if (/^(你好|嗨|hello|hi|hey|早上好|晚上好)[！!。\s]*$/i.test(question)) return '你好！很高兴认识你。想了解我的学校，还是看看我的公开项目？';
       return '当前是基于已确认资料的简单问答，还没有连接真实 AI。\n我可以回答学校、专业、GitHub 和公开项目相关的问题；这条问题暂时没有对应的资料。';
     }
