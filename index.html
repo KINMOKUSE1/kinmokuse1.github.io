@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="kmks 的个人主页。上海师范大学，计算机科学与技术。公开项目与数字分身。">
+  <title>kmks · 个人主页</title>
+  <link rel="icon" href="data:,">
+  <style>
+    :root{color-scheme:light;--ink:#242426;--muted:#60636c;--line:#dedfe4;--paper:#f5f6f8;--accent:#3459cf}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,"Segoe UI","Microsoft YaHei",sans-serif;font-size:16px;line-height:1.7}button,input{font:inherit}a{color:inherit;text-decoration:none}a:hover{color:var(--accent)}button{cursor:pointer}button:disabled{cursor:wait;opacity:.55}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #7a94ec;outline-offset:4px}.page{max-width:1320px;margin:auto;padding:0 48px}.nav{height:100px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{display:flex;gap:12px;align-items:center;font-size:18px;font-weight:650}.nav-links{display:flex;gap:28px;font-size:14px}.main{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(340px,.9fr);gap:60px;padding:56px 0}.eyebrow{font-size:13px;letter-spacing:.12em;color:var(--muted);font-weight:600}.intro{display:flex;align-items:center;justify-content:space-between;gap:24px;margin:24px 0 28px}h1{margin:0;font-weight:500;font-size:clamp(2.5rem,4.7vw,4.5rem);line-height:1.15;letter-spacing:-.04em}.name{font-family:Georgia,"Times New Roman",serif;font-style:italic;font-size:1.25em;letter-spacing:-.06em}.avatar{height:164px;width:164px;object-fit:cover;border-radius:50%;flex-shrink:0;border:1px solid var(--line)}.bio{font-size:19px;margin:0 0 14px}.note{color:var(--muted);margin:0;max-width:480px}.tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:24px}.tag{padding:4px 12px;border:1px solid #d5d7df;border-radius:100px;font-size:13px}.intro-links{display:flex;align-items:center;gap:22px;margin:30px 0 44px}.primary-link{padding:10px 22px;border-radius:8px;background:var(--ink);color:white;font-size:14px}.primary-link:hover{background:var(--accent);color:white}.sub-link{font-size:14px;border-bottom:1px solid #8c8f97}h2{font-size:21px;font-weight:600;margin:0}.section-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}.section-number{font-size:12px;color:var(--muted);font-family:monospace}.projects{display:grid;gap:12px}.project{display:block;border:1px solid var(--line);background:#fff;padding:23px 24px;border-radius:12px;transition:border-color .2s,transform .2s}.project:hover{border-color:var(--accent);transform:translateY(-2px)}.project-heading{display:flex;gap:12px;justify-content:space-between;align-items:center}.project h3{font-size:18px;font-weight:600;margin:0}.project p{margin:10px 0 16px;color:var(--muted);font-size:14px}.repo-label{font-size:12px;border:1px solid var(--line);padding:0 8px;border-radius:5px;color:var(--muted);white-space:nowrap}.repo-meta{display:flex;justify-content:space-between;color:var(--muted);font-size:12px}.chat-wrap{align-self:start;position:sticky;top:24px;scroll-margin-top:24px}.chat{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 12px 48px #25283a06}.chat-head{padding:24px 26px 20px;border-bottom:1px solid #ececf0}.chat-title{display:flex;justify-content:space-between;align-items:center;gap:8px}.chat-title h2{font-size:20px}.reset{border:0;background:transparent;color:var(--muted);font-size:13px;padding:5px}.chat-status{font-size:13px;color:var(--muted);margin-top:5px}.chat-body{height:310px;overflow-y:auto;padding:26px;display:flex;flex-direction:column;gap:18px}.message{max-width:93%;font-size:14px;line-height:1.8;white-space:pre-wrap;overflow-wrap:anywhere}.message.assistant{align-self:start}.message.user{align-self:end;background:#edf1ff;padding:10px 14px;border-radius:14px 14px 3px 14px}.speaker{font-size:12px;font-weight:600;letter-spacing:.03em;margin-bottom:5px;color:var(--accent)}.chat-foot{padding:16px 24px 24px;border-top:1px solid #ececf0}.suggestions{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:14px}.suggestion{border:1px solid #e0e2e8;background:white;border-radius:6px;padding:5px 10px;font-size:12px;color:#505562}.suggestion:hover{color:var(--accent);border-color:var(--accent)}.composer{display:flex;align-items:center;background:var(--paper);border:1px solid #e5e6eb;border-radius:8px;padding:6px 6px 6px 13px;gap:8px}.composer input{background:transparent;border:0;width:100%;min-width:0;padding:5px 0;outline:none;font-size:14px}.composer:focus-within{border-color:var(--accent)}.send{border:0;background:var(--ink);color:white;border-radius:6px;padding:7px 13px;font-size:13px;white-space:nowrap}.chat-caption{font-size:12px;color:var(--muted);margin:14px 12px 0}.footer{display:flex;justify-content:space-between;gap:20px;padding:25px 0 30px;border-top:1px solid var(--line);color:var(--muted);font-size:12px}.footer a{text-decoration:underline;text-underline-offset:3px}
+    @media(min-width:1400px){.main{gap:80px}}@media(max-width:980px){.page{padding:0 28px}.main{gap:30px;grid-template-columns:minmax(0,1fr) minmax(310px,.9fr)}.avatar{width:110px;height:110px}.intro{gap:14px}}@media(max-width:760px){.page{padding:0 22px}.nav{height:78px}.nav-links{gap:18px}.main{grid-template-columns:1fr;gap:38px;padding:34px 0}.intro{margin:20px 0 24px}.avatar{width:118px;height:118px}h1{font-size:clamp(1.65rem,8.5vw,2.25rem)}.bio{font-size:17px}.intro-links{margin-bottom:34px}.chat-wrap{position:static}.chat-body{height:300px}.footer{flex-wrap:wrap}.chat-caption{margin-left:0}.project{padding:20px}}@media(max-width:380px){.avatar{width:96px;height:96px}.intro{gap:12px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.project{transition:none}}
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="nav">
+      <a class="brand" href="#about" aria-label="kmks 个人主页">kmks</a>
+      <nav class="nav-links" aria-label="主导航"><a href="#projects">公开项目</a><a href="#twin">聊聊</a><a href="https://github.com/KINMOKUSE1" target="_blank" rel="noopener noreferrer">GitHub</a></nav>
+    </header>
+    <main class="main">
+      <div>
+        <section id="about" aria-labelledby="intro-title">
+          <div class="eyebrow">COMPUTER SCIENCE · SHANGHAI</div>
+          <div class="intro"><h1 id="intro-title">你好，我是<br><span class="name">kmks.</span></h1><img class="avatar" src="avatar.jpg" alt="kmks 的 GitHub 头像" width="164" height="164"></div>
+          <p class="bio">上海师范大学 · 计算机科学与技术</p>
+          <p class="note">欢迎来到我的个人主页。这里收录我的公开项目，也可以通过数字分身了解我的背景。</p>
+          <div class="tags"><span class="tag">计算机科学</span><span class="tag">上海</span><span class="tag">@KINMOKUSE1</span></div>
+          <div class="intro-links"><a class="primary-link" href="#twin">和数字分身聊聊</a><a class="sub-link" href="https://github.com/KINMOKUSE1" target="_blank" rel="noopener noreferrer">访问我的 GitHub</a></div>
+        </section>
+        <section id="projects" aria-labelledby="project-title">
+          <div class="section-head"><h2 id="project-title">公开项目</h2><span class="section-number">01 / PROJECTS</span></div>
+          <div class="projects">
+            <a class="project" href="https://github.com/KINMOKUSE1/MokioAgent" target="_blank" rel="noopener noreferrer"><div class="project-heading"><h3>MokioAgent</h3><span class="repo-label">Fork</span></div><p>从 ToolCall 到 Claw 全 Agent 指南</p><div class="repo-meta"><span>Fork 自 Wood-Q/MokioAgent</span><span>在 GitHub 查看</span></div></a>
+            <a class="project" href="https://github.com/KINMOKUSE1/learngit" target="_blank" rel="noopener noreferrer"><div class="project-heading"><h3>learngit</h3><span class="repo-label">公开仓库</span></div><p>仓库内容与更新记录可以在 GitHub 上查看。</p><div class="repo-meta"><span>KINMOKUSE1 / learngit</span><span>在 GitHub 查看</span></div></a>
+          </div>
+        </section>
+      </div>
+      <section class="chat-wrap" id="twin" aria-labelledby="twin-title">
+        <div class="chat">
+          <header class="chat-head"><div class="chat-title"><h2 id="twin-title">kmks 的数字分身</h2><button class="reset" id="reset" type="button">重新开始</button></div><div class="chat-status" id="status" role="status">资料问答 · 尚未连接 AI</div></header>
+          <div class="chat-body" id="messages" role="log" aria-live="polite" aria-label="聊天记录"></div>
+          <div class="chat-foot">
+            <div class="suggestions" aria-label="推荐问题"><button type="button" class="suggestion" data-question="介绍一下你自己">介绍一下你</button><button type="button" class="suggestion" data-question="你有哪些公开项目？">你的公开项目</button><button type="button" class="suggestion" data-question="怎么找到你？">怎么找到你</button></div>
+            <form class="composer" id="chat-form"><input id="question" aria-label="向数字分身提问" placeholder="问问学校、项目，或打个招呼…" maxlength="2000" autocomplete="off" required><button class="send" type="submit" id="send">发送</button></form>
+          </div>
+        </div>
+        <p class="chat-caption">分身依据已确认的个人资料回答。未提供的信息，会如实说明。</p>
+      </section>
+    </main>
+    <footer class="footer"><span>kmks · KINMOKUSE1</span><span><a href="https://www.shnu.edu.cn/" target="_blank" rel="noopener noreferrer">上海师范大学</a> / <a href="https://github.com/KINMOKUSE1" target="_blank" rel="noopener noreferrer">GitHub</a></span></footer>
+  </div>
+  <script>
+    const history = [];
+    let configured = false;
+    let busy = false;
+    const messages = document.getElementById('messages');
+    const input = document.getElementById('question');
+    const status = document.getElementById('status');
+    function append(role, text) {
+      const message = document.createElement('div');
+      message.className = 'message ' + role;
+      if (role === 'assistant') {
+        const speaker = document.createElement('div'); speaker.className = 'speaker'; speaker.textContent = 'kmks 的分身'; message.append(speaker);
+      }
+      const content = document.createElement('div'); content.textContent = text; message.append(content);
+      messages.append(message); messages.scrollTop = messages.scrollHeight;
+    }
+    function reset() {
+      history.length = 0; messages.replaceChildren();
+      append('assistant', '你好，我是 kmks 的数字分身。\n可以问我在哪里读书、有哪些公开项目，或者怎样找到我。');
+    }
+    function localAnswer(question) {
+      if (/项目|作品|仓库|Mokio|learngit|agent/i.test(question)) return '我的 GitHub 目前有两个公开仓库：\n\n• MokioAgent：从 ToolCall 到 Claw 全 Agent 指南，是从 Wood-Q/MokioAgent Fork 的仓库。\n• learngit：仓库没有填写公开简介，可以到 GitHub 查看具体内容。\n\n我还没有提供更多项目细节，因此不补充未经确认的经历或成果。';
+      if (/联系|找到|github|账号|主页/i.test(question)) return '你可以在 GitHub 找到我：\nhttps://github.com/KINMOKUSE1\n\n主页上的 GitHub 按钮可以直接打开我的账号。';
+      if (/学校|大学|专业|介绍|自己|谁|名字|上海|背景/i.test(question)) return '我是 kmks，GitHub 用户名是 KINMOKUSE1，就读于上海师范大学，专业方向是计算机科学与技术，所在地是上海。';
+      if (/^(你好|嗨|hello|hi|hey|早上好|晚上好)[！!。\s]*$/i.test(question)) return '你好！很高兴认识你。想了解我的学校，还是看看我的公开项目？';
+      return '当前是基于已确认资料的简单问答，还没有连接真实 AI。\n我可以回答学校、专业、GitHub 和公开项目相关的问题；这条问题暂时没有对应的资料。';
+    }
+    async function checkStatus() {
+      if (location.hostname.endsWith('.github.io')) {
+        status.textContent = '资料问答 · 尚未连接 AI';
+        return;
+      }
+      if (location.protocol === 'file:') return;
+      try {
+        const response = await fetch('/api/status'); if (!response.ok) throw new Error();
+        const result = await response.json(); configured = result.configured === true;
+        status.textContent = configured ? 'AI 对话 · 已配置模型服务' : '资料问答 · 尚未连接 AI';
+      } catch { status.textContent = '资料问答 · 本地服务未连接'; }
+    }
+    async function send(question) {
+      if (busy || !question.trim()) return;
+      question = question.trim(); busy = true; input.value = '';
+      document.querySelectorAll('.send, .suggestion, .reset').forEach(button => button.disabled = true);
+      append('user', question);
+      try {
+        let answer;
+        if (configured) {
+          status.textContent = 'AI 正在回答…';
+          const response = await fetch('/api/chat', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({messages:[...history.slice(-10), {role:'user', content:question}]})});
+          const result = await response.json(); if (!response.ok) throw new Error(result.error || '模型暂时没有返回回答，请稍后再试。');
+          answer = result.answer;
+        } else { answer = localAnswer(question); }
+        history.push({role:'user',content:question},{role:'assistant',content:answer}); append('assistant',answer);
+      } catch (error) { append('assistant', error.message || '连接暂时出现问题，请稍后再试。'); }
+      finally {
+        busy = false; document.querySelectorAll('.send, .suggestion, .reset').forEach(button => button.disabled = false);
+        if (configured) status.textContent = 'AI 对话 · 已配置模型服务'; input.focus();
+      }
+    }
+    document.getElementById('chat-form').addEventListener('submit', event => {event.preventDefault(); send(input.value);});
+    document.querySelectorAll('[data-question]').forEach(button => button.addEventListener('click', () => send(button.dataset.question)));
+    document.getElementById('reset').addEventListener('click', reset);
+    reset(); checkStatus();
+  </script>
+</body>
+</html>
